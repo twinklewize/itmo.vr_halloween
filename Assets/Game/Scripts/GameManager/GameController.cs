@@ -81,7 +81,7 @@ public class GameController : MonoBehaviour
         timeController.ResetTimer();
         currentItemIndex = -1;
 
-        Instantiate(blackSphere, player.transform.position + Vector3.up / 2, blackSphere.transform.rotation);
+        Instantiate(blackSphere, player.transform.position + Vector3.up, blackSphere.transform.rotation);
         fadeController = blackSphere.GetComponent<FadeController>();
         fadeController.FadeInAndFadeOut();
     }
